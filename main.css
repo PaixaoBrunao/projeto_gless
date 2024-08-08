@@ -177,3 +177,88 @@ footer {
     width: auto; /* Mantém a proporção da imagem */
     margin-bottom: 16px; /* Adiciona um espaço inferior */
 }
+
+/*celulares */
+
+/* Media Query para telas menores que 1024px (tablets em modo paisagem, laptops) */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 36px;
+    }
+    
+    .store-front {
+        max-width: 90%;
+    }
+
+    .estilos-unhas {
+        max-width: 250px;
+    }
+}
+
+/* Media Query para telas menores que 768px (tablets em modo retrato, celulares grandes) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .store-front {
+        max-width: 80%;
+    }
+
+    .estilos-unhas {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .contact-methods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 90%;
+    }
+
+    footer p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/* Media Query para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .store-front {
+        max-width: 90%;
+    }
+
+    .estilos-unhas {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .social-bar,
+    .contact-us {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
